@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(./sea.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.app {
+      display: grid;
+      grid-template-columns: repeat(4 , 60px);
+      background-color: rgb(0, 98, 122);
+      padding: 15px 10px;
+      border-radius:30px ;
+      -webkit-border-radius:30px ;
+      -moz-border-radius:30px ;
+      -ms-border-radius:30px ;
+      -o-border-radius:30px ;
+}
+.app input {
+    grid-column: span 4;
+    border: none;
+    height: 90px;
+    text-align: end;
+    padding: 0 5px;
+    font-size: 4em;
+    font-family: monospace;
+    outline: none;
+    border-radius:35px ;
+    -webkit-border-radius:35px ;
+    -moz-border-radius:35px ;
+    -ms-border-radius:35px ;
+    -o-border-radius:35px ;
+    margin-bottom: 8px;
+    background-color: rgb(223, 223, 223);
+
+    
+}
+.app button {
+    border: 0;
+    outline: none;
+    padding: 10px 6px;
+    background-color: rgb(59, 59, 59);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin: 5px;
+    font-size: 1.6em;
+    color: #ccc;
+    font-family: monospace;
+}
+button:active {
+    background-color: rgb(175, 89, 40);
+}
+/*================================  media quiries  ======================*/
+
+@media (max-width:300px) {
+
+    body {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 100vh;
+    background-image: url(./sea.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.app {
+    gap: 5px;
+    width: 18em;
+    height: 30em;
+}
+
+.app input {
+
+width: 5.1em;
+    
+}
+.app button {
+   border-radius: 25px;
+   width: 3em;
+   margin-left: 6px;
+  
+   -webkit-border-radius: 25px;
+   -moz-border-radius: 25px;
+   -ms-border-radius: 25px;
+   -o-border-radius: 25px;
+
+}
+
+#cal {
+    width: 6em;
+}
+
+
+
+}
+@media (max-width:260px) {
+
+    body {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 100vh;
+    background-image: url(./sea.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+.app {
+    gap: 0px;
+    width: 14.5em;
+    height: 30em;
+align-items: center;
+}
+
+.app input {
+
+width: 4em;
+
+}
+.app button {
+   border-radius: 40px;
+   width: 1.7em;
+   margin-left: .1em;
+   padding: 3.5px 3.5px;
+   -webkit-border-radius: 40px;
+   -moz-border-radius: 40px;
+   -ms-border-radius: 40px;
+   -o-border-radius: 40px;
+   font-size: 1.7em;
+   text-align: center;
+}
+
+#cal {
+    width: 4em;
+}
+
+
+
+}
